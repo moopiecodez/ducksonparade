@@ -1,0 +1,89 @@
+/* .wrapper (
+    width: 800px;
+    margin: 30px auto;
+)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: blue;
+    background-image: linear-gradient(to right, blue 0%, black 100%);
+    overflow: hidden;
+    position: sticky;
+    font-size: 1.25em; 
+}
+
+nav a {
+    float: left;
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+}
+
+ /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+nav a.active {
+    background-color: black
+}
+
+body {
+    background-color: gold;
+    background-image: linear-gradient(to right, gold 20%, blue 100%);
+    color: blue;
+    width: 800px;
+    margin: 3% auto;
+    text-align:left;
+    font-family: copperplate, verdana, sans-serif; 
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 2px black, 5px 5px yellow;
+}
+
+h2 {
+    font-size: 2em;
+    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#skills ul {
+    column-count: 2;
+}
+ul.a {
+    border-left: 5px solid gold;
+    list-style-type: none;
+}
+
+.page-wrapper {
+    background-color: whitesmoke;
+    border: 3px groove blue;
+
+}
+
+/* gives space between text and border*/
+.content {
+    padding: 3%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;    
+}
